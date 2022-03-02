@@ -1,0 +1,137 @@
+@import "../../global.scss";
+.gallery{
+    width: 100%;
+    // height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background-color: $bg_color;
+    @include mobile_potrait{
+    }
+    .sliderView{
+        width: 90vw;
+        height: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: column;
+        overflow: hidden;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        @include mobile_potrait{
+            // width: 90%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        @include mobile_landscape{
+            width: 90%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .slick-slider{
+            width: 100%;
+        }
+        
+        .sliderList{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            transition: all 1s ease;
+            // width: 386.667px; transform: translate3d(0px, 0px, -107.672px) rotateX(0deg) rotateY(-53.8362deg); z-index: 0; transition-duration: 0ms; margin-right: 30px;
+            .item{
+                width: 28vw;
+                height: 28vw;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                transition: all 0.5s ease;
+                perspective: 900px;
+                perspective: 900px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    height: 30vw;
+                    transition: all 1s ease;
+                    // transform: translate3d(0px, 0px, -107.672px) rotateX(0deg) rotateY(-53.8362deg);
+                     @include mobile_potrait{
+                         margin-bottom: 1vh;
+                     }
+                 }
+            }
+            
+        }
+    }
+    .arrowLeft{
+        color: white;
+        font-size: 5rem;
+        position: absolute;
+        left:3rem;
+        cursor: pointer;
+        @include mobile_potrait{
+            font-size: 2rem;
+            left:1rem;
+            
+        }
+        @include mobile_landscape{
+            font-size: 2rem;
+            left:1rem;
+        }
+    }
+    .arrowRight{
+        color: white;
+        font-size: 5rem;
+        position: absolute;
+        right:3rem;
+        cursor: pointer;
+        @include mobile_potrait{
+            font-size: 2rem;
+            right:1rem;
+            
+        }
+        @include mobile_landscape{
+            font-size: 2rem;
+            right:1rem;
+        }
+    }
+}
+.card-wrapper{
+    position: relative;
+    width: 100%;
+    padding:0 10px;
+    
+    box-sizing: border-box;
+    &:active,&:hover, &:focus{
+        outline: none;
+        border: none;
+
+    }
+}
+.card{
+    width: 100%;
+    height: 50vh;
+    // border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    .card-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 5s;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: black;
+        perspective: 900px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

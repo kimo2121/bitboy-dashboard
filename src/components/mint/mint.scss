@@ -1,0 +1,329 @@
+@import "../../global.scss";
+.mint{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    // height: 70vh;
+    @include mobile_potrait{
+        height: auto;
+        background-size: cover;
+    }
+    @include mobile_landscape{
+        height: auto;
+    }
+    .scroll{
+        top: -10rem;
+        position: absolute;
+        @include mobile_potrait{
+            top: -5rem;
+        }
+        @include mobile_landscape{
+            top: -5rem;
+        }
+    }
+    .welcome{
+        width: 70%;
+        z-index: 2;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        background-color: #000;
+        @include mobile_potrait{
+            width: 80%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        @include mobile_landscape{
+            width: 80%;
+            height: 10rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .welcomeContent{
+            width: 100%;
+            // height: 13rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 2;
+            h2{
+                font-size: 3rem;
+                font-weight: 600;
+                color: white;
+                margin-bottom: 1rem;
+                margin-top: 2rem;
+                @include mobile_potrait{
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                @include mobile_landscape{
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+                color: white;
+                width: 90%;
+                @include mobile_potrait{
+                    font-size: 1rem;
+                }
+                @include mobile_landscape{
+                    font-size: 1em;
+                }
+            }
+            .wrapper{
+                width: 70%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                // background-image: linear-gradient(45deg, #daffda 0%, #e9fbff 100%);
+                // background-color: rgba(255, 255, 255, 0.104);
+                border-radius: 2rem;
+
+                border: 1px white solid;
+                box-shadow: 0px 0px 5px white;
+                @include mobile_potrait{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 2rem;
+                }
+                @include mobile_landscape{
+                    border-radius: 1rem;
+                    width: 60%;
+                }
+                .mintTitle{
+                    font-size: 3rem;
+                    width: 80%;
+                    text-align: center;
+                    font-weight: normal;
+                    margin-top: 2rem;
+                    color: #E74444;
+                    margin-bottom: 0.5rem;
+                    @include mobile_potrait{
+                        font-size: 1.5rem;
+                        margin-top: 0.5rem;
+                        line-height: 2rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    @include mobile_landscape{
+                        font-size: 1.2rem;
+                        margin-top: 0.5rem;
+                        line-height: 1.5rem;
+                        margin-bottom: 0rem;
+                    }
+                }
+                .mintCount{
+                    width: 100%;
+                    height: 10rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    @include mobile_potrait{
+                        height: 5rem;
+                    }
+                    @include mobile_landscape{
+                        height: 5rem;
+                    }
+                    .mintDecrease{
+                        width: 4rem;
+                        height: 4rem;
+                        transition: all 0.5s ease;
+                        cursor: pointer;
+                        background-color: #ffffff1c;
+                        // background-image: linear-gradient(to bottom right, #72fc48 0%, #05a227 100%);
+                        border: 1px white solid;
+                        border-radius: 50%;
+                        color:rgb(255, 255, 255);
+                        // text-shadow: 1px 1px 3px black;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-left: 2rem;
+                        &:hover{
+                            text-shadow: 2px 2px 5px black;
+                        }
+                        @include mobile_potrait{
+                            width: 2rem;
+                            height: 2rem;
+                            font-size: 1rem;
+                            margin-left: 0.5rem;
+                        }
+                        @include mobile_landscape{
+                            width: 2rem;
+                            height: 2rem;
+                            font-size: 1rem;
+                            margin-left: 0.5rem;
+                        }
+                    }
+                    .mintIncrease{
+                        width: 4rem;
+                        height: 4rem;
+                        border: 1px white solid;
+                        transition: all 0.5s ease;
+                        cursor: pointer;
+                        background-color: #ffffff1c;
+                        // background-image: linear-gradient(to bottom right, #72fc48 0%, #05a227 100%);
+                        border-radius: 50%;
+                        color:rgb(255, 255, 255);
+                        // text-shadow: 1px 1px 3px black;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        &:hover{
+                            text-shadow: 2px 2px 5px black;
+                        }
+                        @include mobile_potrait{
+                            width: 2rem;
+                            height: 2rem;
+                            font-size: 1rem;
+                        }
+                        @include mobile_landscape{
+                            width: 2rem;
+                            height: 2rem;
+                            font-size: 1rem;
+                        }
+                    }
+                    .mintCountValue{
+                        font-size: 3rem;
+                        font-weight: 700;
+                        margin: 1rem;
+                        color: #ffffff;
+                        @include mobile_potrait{
+                            font-size: 2rem;
+                            margin: 0;
+                        }
+                        @include mobile_landscape{
+                            font-size: 2rem;
+                            
+                        }
+                    }
+                    .mintButton{
+                        padding: 0.8rem 2rem;
+                        cursor: pointer;
+                        border: none;
+                        transition: all 0.5s ease;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #ffffff1c;
+                        // background-image: linear-gradient(to bottom right, #72fc48 0%, #05a227 100%);
+                        border-radius: 3rem;
+                        color: rgb(255, 255, 255);
+                        border: 1px white solid;
+                        // text-shadow: 1px 1px 3px black;
+                        margin-right: 3rem;
+                        @include mobile_potrait{
+                            font-size: 1rem;
+                            padding: 0.8rem 0.8rem;
+                            margin-right: 0.5rem;
+                        }
+                        @include mobile_landscape{
+                            font-size: 1rem;
+                            padding: 0.8rem 0.8rem;
+                            margin-right: 0.5rem;
+                        
+                        }
+                        &:hover{
+                            text-shadow: 1px 1px 3px black;
+                            // opacity: 0.8;
+                            // transform: scale(1.02);
+                        }
+                        span{
+                            width: 100%;
+                            font-size: 2rem;
+                            font-weight: 600;
+                            z-index: 1;
+                            text-align: center;
+                            @include mobile_potrait{
+                                font-size: 1rem;
+                            }
+                            @include mobile_landscape{
+                                font-size: 1rem;
+                            
+                            }
+                        }
+                    }
+                }
+                .mintCost{
+                    width: 60%;
+                    height: 5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    color:#979797;
+                    // border: 2px #5fe3a8 solid;
+                    margin-bottom: 2rem;
+                    border-radius: 1rem;
+                    // box-shadow: 0px 0px 5px #5fe3a8;
+                    @include mobile_potrait{
+                        height: 2.5rem;
+                        border-radius: 0.5rem;
+                        margin-bottom: 1rem;
+                    }
+                    @include mobile_landscape{
+                        height: 2.5rem;
+                        border-radius: 0.5rem;
+                        margin-bottom: 1rem;
+                    }
+                    span{
+                        width: 100%;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        @include mobile_potrait{
+                            font-size: 0.8rem;
+                            margin-bottom: 0rem;
+                        }
+                        @include mobile_landscape{
+                            font-size: 0.8rem;
+                            margin-bottom: 0rem;
+                        }
+                    }
+                }
+                
+            }
+            .countDown{
+                width: 30rem;
+                height: 20rem;
+                z-index: 9999;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border: 1px white solid;
+                border-radius: 1rem;
+                box-shadow: 0px 0px 10px white;
+                @include mobile_potrait{
+                    width: 20rem;
+                    height: 8rem;
+                    border-radius: 0.5rem;
+
+                }
+                @include mobile_landscape{
+                    width: 20rem;
+                    height: 8rem;
+                    border-radius: 0.5rem;
+                }
+                p{
+                    width: 90%;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+                
+            }
+        }
+    }
+
+}

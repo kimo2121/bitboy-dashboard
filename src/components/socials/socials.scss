@@ -1,0 +1,106 @@
+@import "../../global.scss";
+.socials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    .socialsContent{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            color: #ffffff;
+            width: 100%;
+            font-size: 2rem;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 5rem;
+            @include mobile_potrait{
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
+            @include mobile_landscape{
+                font-size: 1.5rem;
+                margin-top: 3rem;
+            }
+        }
+        p{
+            width: 100%;
+            color:rgb(202, 202, 202);
+            font-size: 1.2rem;
+            line-height: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            @include mobile_potrait{
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                margin-top: 1rem;
+            }
+            @include mobile_landscape{
+                font-size: 0.7rem;
+                line-height: 1rem;
+                margin-top: 1rem;
+            }
+        }
+        .center{
+            color:rgb(255, 255, 255);
+            text-align: center;
+        }
+        .link{
+            width: 100%;
+            margin-top: 3em;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mobile_potrait{
+                margin-top: 2em;
+                margin-bottom: 1rem;
+            }
+            @include mobile_landscape{
+                margin-top: 2em;
+                margin-bottom: 1rem;
+            }
+            .joinLink{
+                padding: 0.5rem 3rem;
+                border: none;
+                font-size: 1.2rem;
+                background-color: #ffffff00;
+                border: 2px white solid;
+                color: #ffffff;
+                border-radius: 3rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:fit-content;
+                transition: all 0.3s ease;
+                margin-right: 1rem;
+                font-family: 'Mukta Mahee', sans-serif;
+                text-decoration: none;
+                @include mobile_potrait{
+                    margin-right: 1rem;
+                    padding: 0.5rem 1rem;
+                    font-size: 0.8rem;
+                }
+                @include mobile_landscape{
+                    padding: 0.5rem 1rem;
+                    // border-radius: 1rem;
+                    font-size: 0.6rem;
+                }
+                img{
+                    width: 2rem;
+                    margin-right: 1rem;
+                }
+                &:hover{
+                    background-color: #ffffff31;
+                }
+            }
+        }
+        
+    }
+}

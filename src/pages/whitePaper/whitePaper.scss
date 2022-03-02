@@ -1,0 +1,13 @@
+.whitePaper{
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    position: relative;
+    >div{
+        width: 100%;
+    }
+}

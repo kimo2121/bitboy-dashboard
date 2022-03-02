@@ -1,0 +1,247 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 2px 2px 5px rgb(21, 21, 21);
+  @include mobile_potrait {
+    height: 5rem;
+  }
+  @include mobile_landscape {
+    height: 5rem;
+  }
+  .logo {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 400;
+      color: white;
+      position: relative;
+      font-size: 3rem;
+      font-family: "Mukta Mahee", sans-serif;
+      font-weight: 600;
+      @include mobile_potrait {
+        font-size: 2rem;
+      }
+      @include mobile_landscape {
+        font-size: 2rem;
+      }
+      span {
+        color: #eba013;
+      }
+      img {
+        width: 3rem;
+      }
+    }
+  }
+
+  .navList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      overflow: hidden;
+      @include mobile_potrait {
+        display: none;
+      }
+      li {
+        cursor: pointer;
+        border-bottom: 3px linear solid;
+        padding: 0.3rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        @include mobile_landscape {
+          padding: 0.3rem 0.5rem;
+        }
+        a {
+          // margin-right: 1.5rem;
+          color: rgb(220, 220, 220);
+          font-size: 1.2rem;
+          font-weight: 400;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          font-family: "Mukta Mahee", sans-serif;
+          transition: all 0.3s ease;
+          @include mobile_landscape {
+            font-size: 0.6rem;
+          }
+        }
+        &:hover {
+          a {
+            color: #ffffff;
+          }
+        }
+        .underLine {
+          // background-image: linear-gradient( 180deg, #ffffff 20%, #fafafa 30%, #0a0a0a 100%);
+          // background-color: #fff;
+          // box-shadow: 0px 1px 6px white;
+          height: 3px;
+          width: 100%;
+
+          left: 0;
+          z-index: 2;
+          position: absolute;
+          bottom: 0;
+          // margn-bottom: 0.5rem;
+          @include mobile_potrait {
+          }
+          @include mobile_landscape {
+          }
+          &:hover {
+            background-image: linear-gradient(
+              180deg,
+              #ffffff 20%,
+              #fafafa 30%,
+              #0a0a0a 100%
+            );
+          }
+        }
+      }
+    }
+  }
+
+  .social-Links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(255, 255, 255);
+      background-color: #f7931a;
+      margin-left: 1rem;
+      border-radius: 3rem;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      @include mobile_potrait {
+        display: none;
+      }
+      @include mobile_landscape {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+      }
+      &:hover {
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+      }
+    }
+    .discordLink {
+      padding: 0.5rem 2rem;
+      border: none;
+      font-size: 1.2rem;
+      background-color: #ffffff00;
+      border: 2px white solid;
+      color: #ffffff;
+      border-radius: 3rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-right: 1rem;
+      font-family: "Mukta Mahee", sans-serif;
+      @include mobile_potrait {
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+      }
+      @include mobile_landscape {
+        padding: 0.5rem 1rem;
+        // border-radius: 1rem;
+        font-size: 0.6rem;
+      }
+      &:hover {
+        background-color: #ffffff31;
+      }
+    }
+    button {
+      padding: 0.5rem 2rem;
+      border: none;
+      font-size: 1.2rem;
+      background-color: #ffffff4f;
+      border: 2px white solid;
+      color: #ffffff;
+      border-radius: 3rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-right: 1rem;
+      font-family: "Mukta Mahee", sans-serif;
+      @include mobile_potrait {
+        margin-right: 3rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+      }
+      @include mobile_landscape {
+        padding: 0.5rem 1rem;
+        font-size: 0.6rem;
+      }
+      &:hover {
+        background-color: #ffffff31;
+      }
+    }
+  }
+  .hamburger {
+    display: none;
+    @include mobile_potrait {
+      display: flex;
+      width: 2.5rem;
+      height: 2.2rem;
+      right: 1rem;
+      top: 1.3rem;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    @include mobile_landscape {
+      display: none;
+    }
+    span {
+      width: 100%;
+      height: 0.3rem;
+      border-radius: 3px;
+      background-color: white;
+      transform-origin: left;
+      transition: all 1s ease;
+    }
+    &.active {
+      z-index: 1;
+      span {
+        // &:first-child {
+        //   width: 3rem;
+        //   transform: rotate(30deg);
+        // }
+        // &:nth-child(2) {
+        //   opacity: 0;
+        // }
+        // &:last-child {
+        //   width: 3rem;
+        //   transform: rotate(-30deg);
+        // }
+      }
+    }
+  }
+}

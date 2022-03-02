@@ -1,0 +1,146 @@
+@import "../../global.scss";
+.teamItem p {
+  text-transform: uppercase;
+}
+.team {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #e5e5e5;
+  @include mobile_potrait {
+  }
+
+  .teamContent {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    @include mobile_potrait {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    @include mobile_landscape {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      color: #000000;
+      width: 100%;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      @include mobile_potrait {
+        font-size: 1.5rem;
+      }
+      @include mobile_landscape {
+        font-size: 1.5rem;
+      }
+    }
+
+    .teamWrapper {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      @include mobile_potrait {
+        width: 100%;
+      }
+      @include mobile_landscape {
+      }
+      .teamItem {
+        width: 22vw;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        @include mobile_potrait {
+          width: 40%;
+          height: 40%;
+          margin-bottom: 2rem;
+        }
+        @include mobile_landscape {
+          margin-bottom: 2rem;
+        }
+        img {
+          width: 80%;
+          margin-bottom: 2rem;
+          object-fit: cover;
+          // object-position: -10%;
+          @include mobile_potrait {
+            width: 70%;
+            margin-bottom: 1vh;
+          }
+        }
+        .name {
+          color: #000000;
+          font-size: 1.5rem;
+          text-align: center;
+          margin-bottom: 1rem;
+          @include mobile_potrait {
+            font-size: 1rem;
+          }
+          @include mobile_landscape {
+            font-size: 1rem;
+          }
+        }
+        p {
+          color: rgb(55, 55, 55);
+          margin-top: 0rem;
+          font-size: 1.2rem;
+          text-align: center;
+          font-weight: 300;
+          width: 90%;
+          @include mobile_potrait {
+            font-size: 0.7rem;
+            margin-top: 0.5rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            line-height: 1rem;
+          }
+          @include mobile_landscape {
+            font-size: 0.7rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            line-height: 1rem;
+          }
+        }
+      }
+    }
+  }
+  p.address {
+    color: rgb(255, 255, 255);
+    margin-top: 0rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    width: 90%;
+    span {
+      color: #53ddff;
+    }
+    @include mobile_potrait {
+      font-size: 0.7rem;
+      margin-top: 0.5rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+      line-height: 1rem;
+    }
+    @include mobile_landscape {
+      font-size: 0.7rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+      line-height: 1rem;
+    }
+  }
+}

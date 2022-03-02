@@ -1,0 +1,16 @@
+.app {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  > div {
+    width: 100%;
+  }
+}
+.line {
+  width: 100%;
+  border-bottom: 1px gray solid;
+}

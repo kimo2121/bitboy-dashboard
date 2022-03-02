@@ -1,0 +1,82 @@
+.arrow,
+.minus {
+  position: absolute;
+  right: 10px;
+  font-size: 30px;
+}
+.arrow.active {
+  display: none;
+}
+.minus {
+  display: none;
+  color: rgb(231, 68, 68);
+}
+.minus.active {
+  display: block;
+}
+.MuiAccordionDetails-root {
+  padding-top: 0 !important;
+  font-size: 20px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.527);
+  padding-left: 40px !important;
+}
+.question-styles {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+.accordion-wrpper {
+  width: 70%;
+  font-family: "Montserrat", sans-serif !important;
+  margin: 0 auto;
+}
+.faq-component h1 {
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  text-align: center;
+  /* font-weight: 500; */
+}
+.faq-component {
+  position: relative;
+  left: 0;
+  background-color: white;
+  top: 0;
+  right: 0;
+  /* padding: 50px 0; */
+}
+.answer {
+  text-decoration: none;
+  color: #f1b5b8;
+  transition: all 0.3s;
+  word-break: break-all;
+}
+.answer:hover {
+  color: red;
+}
+.MuiTypography-root {
+  font-weight: 400 !important;
+  font-family: "Montserrat", sans-serif !important;
+  /* color: #223d83; */
+  width: 100%;
+  /* font-family: "Montserrat", sans-serif !important; */
+}
+@media screen and (max-width: 1200px) {
+  .accordion-wrpper {
+    /* width: 930px; */
+  }
+}
+@media screen and (max-width: 990px) {
+  .accordion-wrpper {
+    /* width: 690px; */
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion-wrpper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accordion-wrpper {
+    /* width: 90%; */
+  }
+}
