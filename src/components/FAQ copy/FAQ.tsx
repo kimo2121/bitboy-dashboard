@@ -65,7 +65,7 @@ const CustomizedAccordions = () => {
   };
 
   return (
-    <div id="FAQ" className="faq-component">
+    <div id="faq" className="faq-component">
       <h1>FAQ's</h1>
       <div className="accordion-wrpper">
         <Accordion

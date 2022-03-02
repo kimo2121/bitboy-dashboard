@@ -40,7 +40,6 @@
     margin-top: 10vh;
     padding: 0;
     list-style: none;
-
     font-weight: 400;
     color: white;
     width: 60%;
@@ -78,7 +77,6 @@
     // }
     li {
       position: relative;
-
       left: 0;
       transition: right 0s ease;
       @media screen and (max-width: 972px) {

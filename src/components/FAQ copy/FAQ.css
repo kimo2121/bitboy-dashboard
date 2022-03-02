@@ -32,17 +32,16 @@
 }
 .faq-component h1 {
   text-transform: capitalize;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
-  /* font-weight: 500; */
 }
 .faq-component {
   position: relative;
   left: 0;
   background-color: white;
   top: 0;
+  padding: 40px 0;
   right: 0;
-  /* padding: 50px 0; */
 }
 .answer {
   text-decoration: none;
@@ -56,27 +55,11 @@
 .MuiTypography-root {
   font-weight: 400 !important;
   font-family: "Montserrat", sans-serif !important;
-  /* color: #223d83; */
   width: 100%;
-  /* font-family: "Montserrat", sans-serif !important; */
 }
-@media screen and (max-width: 1200px) {
-  .accordion-wrpper {
-    /* width: 930px; */
-  }
-}
-@media screen and (max-width: 990px) {
-  .accordion-wrpper {
-    /* width: 690px; */
-  }
-}
+
 @media screen and (max-width: 768px) {
   .accordion-wrpper {
     width: 90%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .accordion-wrpper {
-    /* width: 90%; */
   }
 }

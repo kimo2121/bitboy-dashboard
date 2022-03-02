@@ -21,7 +21,6 @@
   .tokenomicsContent {
     width: 90%;
     height: 70%;
-
     z-index: 1;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -77,11 +76,13 @@
           margin-top: 1rem;
           margin-bottom: 1rem;
           width: 90%;
-          @include mobile_potrait {
+          @media screen and (max-width: 1024px) {
             font-size: 0.8em;
             line-height: 1.2rem;
             margin-top: 1rem;
             width: 100%;
+          }
+          @include mobile_potrait {
           }
           @include mobile_landscape {
             font-size: 0.7em;
@@ -106,8 +107,10 @@
             color: #ffffff;
             width: 90%;
             text-align: center;
-            @include mobile_potrait {
+            @media screen and (max-width: 1024px) {
               font-size: 1.5rem;
+            }
+            @include mobile_potrait {
             }
             @include mobile_landscape {
               font-size: 1.5rem;
@@ -120,11 +123,13 @@
             margin-top: 2rem;
             width: 90%;
             text-align: center;
-            @include mobile_potrait {
+            @media screen and (max-width: 1024px) {
               font-size: 0.8em;
               line-height: 1.2rem;
               margin-top: 1rem;
               width: 100%;
+            }
+            @include mobile_potrait {
             }
             @include mobile_landscape {
               font-size: 0.7em;
